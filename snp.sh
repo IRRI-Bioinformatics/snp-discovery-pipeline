@@ -41,7 +41,7 @@ format=$(sbatch format.sh)		#format reference
 perl createAlignmentSlurm.pl $filename $disk		#create slurm scripts for each step
 perl createBAMProcessingSlurm.pl $filename $disk
 perl createMergeBAMSlurm.pl $filename $disk
-perl createBAMtovcfslurm.pl $filename $disk
+perl createVariantCallingSlurm.pl $filename $disk
 
 while read -r line			#read each line to get the genomes
 do
