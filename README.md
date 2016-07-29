@@ -1,8 +1,11 @@
 # snp-discovery-pipeline
 
 The SNP discovery pipeline is used to detect variants including SNPs and indels (insertion/deletions) from next-generation sequencing (NGS) reads. The pipeline includes the following:
+  
   1) Alignment: The sequence reads are aligned to the reference genome using BWA (Burrows-Wheeler Aligner) – bwa 0.7.10 http://bio-bwa.sourceforge.net/ 
+  
   2) BAM Processing: A series of intermediate steps to process and prepare the BAM file for variant calling. Picard Tools is used for BAM processing – Picard Tools 1.119 http://broadinstitute.github.io/picard/ 
+  
   3) Variant calling: Variants are called using the GATK Unified Genotyper – GATK 3.2-2 https://www.broadinstitute.org/gatk/ 
 
 The pipeline is intended to work on High-Performance Computing (HPC) clusters that has SLURM as a job scheduler. However, the individual python scripts can also be used for specific steps independently. 
