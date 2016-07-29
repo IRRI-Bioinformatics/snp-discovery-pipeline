@@ -35,7 +35,7 @@ if [ "$inc_pairs" = true ]	#if there are incomplete pairs
 then
 	exit $			#exit program
 fi
-perl createformat_reference.pl
+perl createFormatReference.pl
 format=$(sbatch format.sh)		#format reference
 
 perl createAlignmentSlurm.pl $filename $disk		#create slurm scripts for each step
