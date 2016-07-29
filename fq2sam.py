@@ -1,3 +1,6 @@
+fq2sam.py: Align fastq read pairs to reference genome.
+created by: Jeffrey A. Detras
+
 #!/usr/bin/python
 
 import sys, getopt, re, os, subprocess
@@ -9,8 +12,7 @@ def main(argv):
     reference = ''
     read_pair1 = ''
     output_dir = ''
-    #bwa_dir = '/home1/02818/jdetras/software/bwa-0.7.10/'
-
+ 
     #get arguments
     try:
         opts, args = getopt.getopt(
@@ -70,7 +72,7 @@ def main(argv):
             output_path + \
             '/' + \
             sam
-    #print align
+
     #execute command
     os.system(align)
 
