@@ -1,5 +1,5 @@
-fq2sam.py: Align fastq read pairs to reference genome.
-created by: Jeffrey A. Detras
+#fq2sam.py: Align fastq read pairs to reference genome.
+#created by: Jeffrey A. Detras
 
 #!/usr/bin/python
 
