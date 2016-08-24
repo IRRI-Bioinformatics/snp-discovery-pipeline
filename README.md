@@ -15,3 +15,5 @@ The pipeline is intended to work on High-Performance Computing (HPC) clusters th
 3. Run createInput.sh to create input.info file which contains information for the genomes/lines and the number of fastq files for each genome. 
 4. Run snp.sh to submit jobs that will run the pipeline. 
 5. Run log.sh to check for error report. 
+
+To see the specific commands, go to https://github.com/IRRI-Bioinformatics/snp-discovery-pipeline/wiki/How-to-run-the-pipeline.
