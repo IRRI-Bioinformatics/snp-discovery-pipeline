@@ -89,7 +89,7 @@ while (my $line=readline*FILE){
 	#print OUT "#SBATCH -N 3\n"
 	print OUT "\n";
 	print OUT "module load bwa/0.7.10-intel\n";
-	print OUT "module load python/2.7.10\n";
+	print OUT "module load python/2.7.11\n";
 	print OUT "\n";
 	#get the first pair of a fastq file and assign for use
 	#print OUT "mkdir $output_dir"
