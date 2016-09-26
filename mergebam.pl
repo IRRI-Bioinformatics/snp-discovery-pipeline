@@ -69,6 +69,12 @@ if (-e "$outputDir/$rawDir/$mergeBam.bai"){
 	system("samtools index $outputDir/$rawDir/$mergeBam");
 	print "$mergeBam indexed.\n";
 }
+
+#remove intermediate files
+system("rm $outputDir/$rawDir/*.list");
+system("rm $outputDir/$rawDir/*.realign.bam");
+system("rm $outputDir/$rawDir/*.realign.bai");
+
 #my $snp_calling_output="$rawDir.vcf";
 #print "Calling variants...\n";
 #system("java $javaMemory -XX:ParallelGCThreads=2 -jar $softwareDir/$gatk/GenomeAnalysisTK.jar -T UnifiedGenotyper -nt 10 -R $refDir/$refGenome/$refSeq -I $outputDir/$rawDir/$mergeBam -o $outputDir/$rawDir/$snp_calling_output -glm BOTH -mbq 20 --genotyping_mode DISCOVERY -out_mode $vcfOutMode");

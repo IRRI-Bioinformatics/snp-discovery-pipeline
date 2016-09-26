@@ -136,7 +136,7 @@ def main(argv):
     addrep_bai = addrep_bam.replace("bam", "bai")
     remove_intermediate = 'rm ' + sam + ' ' + fixmate_bam + \
         ' ' +  mark_duplicate_bam + ' ' + metrics + ' ' + addrep_bam + \
-        ' ' + mark_dup_bai + ' ' + addrep_bai 
+        ' ' + mark_dup_bai + ' ' + addrep_bai + ' ' + sorted_bam
     print remove_intermediate
     os.system(remove_intermediate)
 
